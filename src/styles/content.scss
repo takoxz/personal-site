@@ -1,0 +1,63 @@
+@import "../styles/main";
+
+.divContent{
+    padding: 10vw 5vw 10vw 15vw;
+    display: flex;
+
+    @include mobile{
+        padding-bottom: 0;
+        flex-wrap: wrap;
+    }
+
+    &__left{
+        flex: 1;
+
+        @include mobile{
+            flex:auto;
+        }
+    }
+
+    &__right{
+        flex: 1;
+
+        @include mobile{
+
+        }
+    }
+
+    &__center{
+        width: 88%;
+        @include mobile{
+            justify-content: center;
+        }
+    }
+
+    &__title{
+        text-align: left;
+        padding-top: 8vw;
+        padding-bottom: 1.0vw;    
+        font-size: $smallFontSize;
+        font-family: 'Flamenco';
+        color: $fontColorFour;
+        font-weight: bold;
+
+        @include mobile{
+            font-size: $mobilesmallFontSize;
+        }
+
+    }
+
+    &__text{
+        text-align: left;
+        color: $fontColorTwo;
+        font-size: $xtrasmallFontSize;  
+        font-family: 'Open Sans', sans-serif;
+
+        @include mobile{
+            font-size: $mobileextrasmallFontSize;
+        }
+        
+    }
+
+}
+

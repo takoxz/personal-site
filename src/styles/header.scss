@@ -1,0 +1,29 @@
+@import "../styles/main.scss";
+
+.banner {
+    padding-top:15vw;
+    
+    &__top{
+    font-family: 'Flamenco'; 
+    font-size: $bannerFontSize;
+    text-decoration: underline;
+    text-underline-offset: 1.2vh;
+    text-decoration-thickness: 0.5vh;
+    
+        @include mobile{
+            font-size: $mobilebannerFontSize;
+        }
+    }
+
+    &__bottom{
+        font-family: 'Flamenco'; 
+        font-size: $mediumFontSize;
+        color: $fontColorTwo;
+        padding-top: 0.25vh;
+
+        @include mobile{
+            font-size: $mobilemediumFontSize;
+            padding-top: 2vh;
+        }
+    }
+}

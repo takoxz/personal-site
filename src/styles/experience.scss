@@ -1,0 +1,89 @@
+@import "../styles/main.scss";
+@import "../styles/content.scss";
+
+ 
+.tab{
+    
+    &__list{
+        float:left;
+        background-color: $backgroundColor;
+        padding-right: 2vw;
+        
+
+        @include mobile{
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 80%;
+        }
+        
+    }
+
+    &__button{
+        display: block;
+        background-color: inherit;
+        color: $fontColorThree;
+        padding: 0.7vw;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: $xtrasmallFontSize;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+
+
+
+        @include mobile{
+            font-size: $mobileextrasmallFontSize;
+            display: inline-block;
+            width: auto;
+            
+        }
+
+       
+    }
+
+    &__content{
+        float: left;
+        background-color: $backgroundColor;
+        width: 70%;
+        font-size: $xtrasmallFontSize;
+        font-family: 'Open Sans', sans-serif; 
+        color: $fontColorTwo;
+        padding-top: 0.5vw;
+
+        @include mobile{
+            font-size: $mobileextrasmallFontSize;
+            width: 100%;
+        }
+
+        .jobtitle{
+            color: $fontColorOne;
+            font-family: 'Open Sans', sans-serif;
+            font-size: $xtrasmallFontSize;
+
+            @include mobile{
+                font-size: $mobileextrasmallFontSize;
+            }
+
+        }
+
+        .range{
+            font-size: $tinyFontSize;
+
+            @include mobile{
+                font-size: $mobileextrasmallFontSize;
+            }
+        }
+    }
+}
+
+button:hover{
+    background-color: #272626;
+}
+
+button.active {
+    color: $fontColorOne;
+  }
+

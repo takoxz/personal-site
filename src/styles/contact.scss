@@ -1,0 +1,43 @@
+@import "../styles/main.scss";
+@import "../styles/content.scss";
+
+#contact{
+    text-align: center;
+}
+
+.divContent{
+    &__caption{
+        padding-bottom: 1vw;
+        font-size: $xtrasmallFontSize;
+        color: $fontColorTwo;
+
+        @include mobile{
+            font-size: $mobileextrasmallFontSize;
+        }
+    }
+
+    
+     
+}
+
+.btn__email{
+    @include mobile{
+        width: 25vw;
+        height: 5vw;
+    }   
+}
+
+
+.socmedia{
+    padding-top: 1vw;
+
+    &__item{
+        padding: 0 0.5vw 0 0.5vw;
+
+    }
+
+    :hover{
+        cursor: pointer;
+
+    }
+}
