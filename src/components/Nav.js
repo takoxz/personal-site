@@ -1,6 +1,6 @@
 import React, {useState, useRef } from 'react'
 import { navLinks } from "../config"
-import {Link} from "react-scroll"
+import {Link, animateScroll as scroll } from "react-scroll"
 import { ReactComponent as Logosvg } from '../assets/moonLogo-cropped.svg';
 import "../styles/nav.scss";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -27,12 +27,14 @@ const Nav =() => {
     const handleClickAway = () => {
         setState("close")
       };
-      
+
     return (
     <ClickAwayListener onClickAway={handleClickAway}>
     <div className="navbar">
         <div className="navbar__left">
+            <div className='logowrapper' onClick={scroll.scrollToTop}>
             <Logosvg className='navbar__logo'/>
+            </div>
         </div>
         <div className="navbar__right">
             <ul className='navbar__ul'>
