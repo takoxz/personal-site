@@ -1,7 +1,8 @@
 @import "../styles/main";
 
 .divContent{
-    padding: 10vw 5vw 10vw 15vw;
+    // padding: 10vw 5vw 10vw 15vw;
+    margin: 20vw 10vw;
     display: flex;
 
     @include mobile{
@@ -26,7 +27,8 @@
     }
 
     &__center{
-        width: 88%;
+        width: 100%;
+        
         @include mobile{
             justify-content: center;
         }
@@ -34,8 +36,7 @@
 
     &__title{
         text-align: left;
-        padding-top: 8vw;
-        padding-bottom: 1.0vw;    
+        margin-bottom: 1vw; 
         font-size: $smallFontSize;
         font-family: 'Flamenco';
         color: $fontColorFour;
