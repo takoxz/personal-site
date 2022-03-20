@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/aboutme.scss";
-// import profImage from '../assets/profileImage.png';
+import profImage from '../assets/me.jpg';
 
 function Aboutme() {
   const skills = ['Python', "Flask Framework", "Java", "JavaScripts", "React"]
@@ -29,7 +29,7 @@ function Aboutme() {
 
         </div>
         <div className="divContent__right">
-        
+          <img className="displayPhoto" src={profImage}/>
         </div>
     </div>
     

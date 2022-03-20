@@ -26,8 +26,17 @@
 
 .divContent__text{
     width: 75%;
-
     @include mobile{
         width: 100%;
+    }
+}
+
+.displayPhoto{
+    height: 23vw;
+    border-radius: 50%;
+
+    @include mobile{
+      margin: 15vw 0;
+      height: 45vw;
     }
 }
