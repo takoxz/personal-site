@@ -1,0 +1,79 @@
+@import "../styles/main.scss";
+
+#projects_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.project_grids{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+    gap: 2vw;
+
+}
+
+.grid_item{
+    display: grid;
+    border: 1px solid white;
+    padding: 0 2vw 2vw 2vw;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $xtrasmallFontSize;
+
+}
+
+.techstack{
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 2vw;
+    list-style: none;
+    text-align: left;
+
+    #tech{
+        display: inline-block;
+        margin: 0 0.2vw 0 0.2vw;
+        padding: 0.1vw 0.3vw;
+        border: 1px solid white;
+        border-radius: 0.3vw;
+        font-size: $tinyFontSize;
+        font-family: 'Open Sans', sans-serif;
+        background-color: $backgroundColor;
+    }
+}
+
+.grid_text{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $xtrasmallFontSize/1.1;
+}
+
+
+.grid_title { 
+    
+    &>a{
+    color: $fontColorFour;
+    text-decoration: none;
+
+        &:hover{
+            color: $fontColorThree;   
+        }
+    }
+}   
+
+.git_icon{
+   padding-left: 1vw;
+   cursor: pointer;
+   color: $fontColorThree;  
+
+   &:hover{
+    color: white;   
+
+   }
+   
+}

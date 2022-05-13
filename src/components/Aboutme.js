@@ -2,13 +2,13 @@ import React from 'react'
 import "../styles/aboutme.scss";
 import profImage from '../assets/me.jpg';
 
-function Aboutme() {
+function Aboutme({title, id}) {
   const skills = ['Python', "Flask Framework", "Java", "JavaScripts", "React"]
 
   return (
       <div className='divContent'>
         <div className='divContent__left'>
-          <div id="about" className='divContent__title'>About Me</div>
+          <div id={id} className='divContent__title'>{title}</div>
           <div className="divContent__text">
             Hi! I'm Mindy and I enjoy exploring and learning new things. <br/>
             My interest in computer sprouted from my very first encounter with a computer worm.

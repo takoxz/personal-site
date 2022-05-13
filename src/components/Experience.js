@@ -2,14 +2,14 @@ import React, {useState} from 'react'
 import "../styles/experience.scss";
 import {jobDescription} from "../config"
 
-function Experience() {
+function Experience({title, id}) {
   const [activeTab, setActive] = useState(0);
 
 
   return (
     <div className='divContent'>
       <div className="divContent__center" id="experience_div">
-        <div id="experience" className='divContent__title'>Experience</div>
+        <div id={id} className='divContent__title'>{title}</div>
             <div className="divContent__text">
             <div className="tab__list">            
             {jobDescription && jobDescription.map(({company}, i) => { return(

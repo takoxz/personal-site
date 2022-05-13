@@ -22,11 +22,11 @@ const theme = createTheme({
 })
 
 
-function Contact() {
+function Contact({title, id}) {
    return (
     <div className='divContent'>
       <div className="divContent__center">
-        <div id="contact" className='divContent__title'>Contact Me</div>
+        <div id={id} className='divContent__title'>{title}</div>
         <div className='divContent__caption'>Get In Touch</div>
         <ThemeProvider theme={theme}>
           <Button variant="outlined" color='secondary' className='btn__email' 
