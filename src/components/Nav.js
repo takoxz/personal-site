@@ -1,7 +1,7 @@
 import React, {useState, useRef } from 'react'
 import { navLinks } from "../config"
 import {Link, animateScroll as scroll } from "react-scroll"
-import { ReactComponent as Logosvg } from '../assets/moonLogo-cropped.svg';
+import { ReactComponent as Logosvg } from '../assets/moonLogo-cropped2.svg';
 import "../styles/nav.scss";
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/system';
