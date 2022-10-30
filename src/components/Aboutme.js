@@ -14,7 +14,7 @@ function Aboutme({title, id}) {
             My interest in computer sprouted from my very first encounter with a computer worm.
             The feelings of anxiousness, later on turned into determination to equip myself with relevant knowledge.<br/><br/>
 
-            Currently I'm working as a Security Analyst at Avanade. <br/>
+            Currently I'm working as a Software Engineer at Rakuten. <br/>
             I spent most of my time thinking of ways to automate tasks to make life easier.
             This led me to discovering my profound interest in spending my day typing away on IDE. 
             Hence, I'm currently looking for a position in software engineering to further fuel this little interest of mine.<br/>
